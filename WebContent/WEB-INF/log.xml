@@ -1,0 +1,19 @@
+<!-- spring 整合的作用；
+spring 管理持久层mapper, 相当于dao 接口。
+管理业务层service, 可以调用mapper
+管理表现层handler, 可以调用service接口。
+mapper, service, handler都是javabean；
+
+进行事务控制
+
+第一步整合dao;
+  mybatis和spring整合， 通过spring管理mapper接口
+  使用mapper的扫描器扫描mapper接口在spring中进行注册；
+  
+  2. 整合service
+  通过service 管理service接口；
+  使用配置方式将service 接口配置在spring的配置文件中；
+  
+  3.整合springMVC
+  是spring的模块，不需要整合； -->
+
