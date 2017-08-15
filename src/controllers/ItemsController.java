@@ -65,12 +65,12 @@ public class ItemsController {
 		}
 		
 		//修改
-//		Items item2 = new Items();
-//		item2.setId("1");
-//		item2.setName("我不是筆記本了！！！");
-//		
-//		itemService.updateItem(item2);
-//		
+		Items item2 = new Items();
+		item2.setId("1");
+		item2.setName("我不是筆記本了123！！！");
+		
+		itemService.updateItem(item2);
+		
 		
 		// 查詢單個
 		Items item = itemService.getItemsById("1");
