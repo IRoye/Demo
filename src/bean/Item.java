@@ -1,6 +1,8 @@
 package bean;
 
 public class Item {
+	
+	private String id;
    
 	private String name;
 	
@@ -21,6 +23,16 @@ public class Item {
 	public void setPrice(String price) {
 		this.price = price;
 	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+	
+	
 	
 	
 }

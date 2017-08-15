@@ -22,4 +22,16 @@ public class ItemServiceImpl implements ItemService{
 		return itemMapper.findItemList("123");
 	}
 
+	@Override
+	public Items getItemsById(String itemId) {
+		// TODO Auto-generated method stub
+		return itemMapper.findItemById(itemId);
+	}
+
+	@Override
+	public int updateItem(Items item) {
+		// TODO Auto-generated method stub
+		return itemMapper.updateItemById(item);
+	}
+
 }

@@ -3,6 +3,24 @@ package model;
 import java.util.Date;
 
 public class Items {
+	
+	public static void getHa(){
+		
+	}
+	
+	private void mian() {
+		// TODO Auto-generated method stub
+		System.out.println(j);
+
+	}
+	    int j;
+	    public void doSomething() {
+	    }
+	
+	public void get(){
+		getHa();
+	}
+	
     private String id;
     
     private String name;

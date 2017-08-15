@@ -43,6 +43,7 @@
         <property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml"/>  
         <!--  <property name="mapperLocations" value="mapper/*.xml"/> -->
     </bean> 
+    
      <!-- mapper扫描器 -->
      <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
          <!-- 如果需要扫描多个，中间使用半角的逗号 -->

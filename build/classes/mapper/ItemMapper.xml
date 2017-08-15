@@ -15,4 +15,36 @@
     <select id="findItemList" parameterType="String" resultMap="ItemMap">
       select * from items;
     </select>
+    
+    <!-- 根据ID 查询商品列表 -->
+    <select id="findItemById" parameterType="String" resultType="model.Items">
+      select * from items where id = #{id}
+    </select>
+    
+    <!-- 修改商品信息 -->
+    
+    <update id="updateItemById" parameterType="model.Items">
+      update items  
+      <set>
+       <if test="name != null">
+         name=#{name},
+       </if>
+       <if test="price != null">
+         price=#{price},
+       </if>
+       <if test="detail != null">
+         detail=#{detail},
+       </if>
+       <if test="pic != null">
+         pic=#{pic},
+       </if>
+        <if test="create_time != null">
+         create_time=#{create_time},
+       </if>
+       where 
+       <if test="id != null">
+         id = #{id}
+       </if>
+      </set>
+    </update>
 </mapper>
