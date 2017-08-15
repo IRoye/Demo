@@ -13,9 +13,12 @@ public class SunnyTest {
 //	  right.draw();
 	  
 	 HairFac factory = new HairFac();
-	 
-	 HairInterface left = factory.getHair("left");
-	 
+	 HairInterface left = factory.getHairByClass("left");
 	 left.draw();
+	 
+	 
+	 
+	 
+	 
 }
 }
